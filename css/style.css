@@ -2,14 +2,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
 }
 
+/* HEADER */
 header{
     height: 70px;
-    background-color: orangered;
+    background-color: #FD6C11;
     position: fixed;
     width: 100%;
     padding: 20px;
+    z-index: 1;
 }
 
 .d-flex{
@@ -19,6 +22,12 @@ header{
 
 .j-content{
     justify-content: space-between;
+}
+
+.flex-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .genre{
@@ -37,10 +46,6 @@ header{
     color: white;
 }
 
-main{
-    padding-top: 100px;
-}
-
 .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -56,21 +61,128 @@ main{
     width: 50%;
 }
 
+/* MAIN */
+main{
+    padding-top: 100px;
+    padding-bottom: 30px;    
+}
+
+.product{
+    position: relative;
+}
+
+.card{
+    position: relative;
+}
+
+.card img{
+    width: 100%;
+}
+
 .col-33{
     width: calc(100% / 3 - 20px);
-    height: 530px;
-    background-color: red;
 }
 
 .gap{
     gap: 30px 30px;
 }
 
+.dress{
+    font-weight: bolder;
+}
+
+.new-price{
+    color: red;
+    font-weight: bolder;
+}
+
+.old-price{
+    color: gray;
+    text-decoration: line-through;
+    font-weight: bolder;
+}
+
+.discount{
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    background-color: red;
+    padding: 4px 8px;
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+}
+
+.eco{
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    background-color: green;
+    padding: 4px 8px;
+    position: absolute;
+    bottom: 40px;
+    left: 55px;
+}
+
+.margin-left-0{
+    left: 0;
+    bottom: 40px;
+}
+
+.hearts{
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    background-color: white;
+    padding: 5px 12px;
+}
+
+.hydden{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.card:hover .hydden{
+    display: block;
+}
+
+.card:hover .show{
+    display: none;
+}
+
+.hearts:hover{
+    color: red;
+}
+
 footer{
     background-color: black;
-    height: 80px;
-    margin-top: 10px;
-    padding: 20px;
+    color: white;
+    margin-top: 30px;
+    padding: 30px;
+}
 
+#society{
+    font-size: 18px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
 
+.footer-text{
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+#info{
+    margin-bottom: 8px;
+    margin-right: 15px;
+}
+
+.icon-footer{
+    font-size: 25px;
 }
